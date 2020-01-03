@@ -1,0 +1,42 @@
+package chengji;
+
+import java.util.*;
+
+class Student {
+	String number;
+	String name;
+	float score;
+
+	// Constructor
+	Student(String number1, String name1, float score1) {
+		number = number1;
+		name = name1;
+		score = score1;
+	}
+
+	// Used to print student details in main()
+	public String toString() {
+		return this.number + " " + this.name + " " + this.score;
+	}
+}
+
+public class student {
+	public static void main(String[] args) {
+		ArrayList<Student> ar = new ArrayList<Student>();
+		Scanner sc = new Scanner(System.in);
+		String num1,nam1;
+		float sco1;
+		
+		for(int i = 0;i < 5;i++) {
+			num1 = sc.next();
+			nam1 = sc.next();
+			sco1 = sc.nextFloat();
+			ar.add(new Student(num1,nam1,sco1));
+		}
+		
+		ar.sort((o1,o2)->(boolean)((Student)o1.score - (Student)o2.score);
+		   //sort((a, b) -> a.getWeight() - b.getWeight());
+
+/* 请在这里补全代码，使程序完成指定的功能。 */
+	}
+}

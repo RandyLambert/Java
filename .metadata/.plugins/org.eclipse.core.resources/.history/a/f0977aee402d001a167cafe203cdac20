@@ -1,0 +1,16 @@
+package pta;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+public class gongli {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Long a;
+		a = sc.nextLong();
+		Calendar b = null;
+		b.setTimeInMillis(a);
+		System.out.print(b.get(Calendar.YEAR)+"-"+b.get(Calendar.HOUR));
+	}
+}

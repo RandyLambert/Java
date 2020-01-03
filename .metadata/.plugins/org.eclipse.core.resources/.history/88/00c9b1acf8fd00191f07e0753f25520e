@@ -1,0 +1,15 @@
+package pta;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class paixu{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        String a = input.next();
+        char[] bb = a.toCharArray();
+        char[] c = Arrays.sort(bb);
+        System.out.println(c);
+
+    }
+}

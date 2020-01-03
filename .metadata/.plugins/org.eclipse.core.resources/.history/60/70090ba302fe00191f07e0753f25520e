@@ -1,0 +1,22 @@
+package pta;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class welcome {
+	public static void main(String [] args) {
+		String x;
+		String e;
+		Scanner in = new Scanner(System.in);
+		x = in.next();	
+		e = in.next();
+		int ans = 0;
+		for(int i = 0;i < x.length();i++)
+		{
+			if(e.charAt(0) == x.charAt(i)) {
+				ans++;
+			}
+		}
+		System.out.println(ans);
+	}
+}
